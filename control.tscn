@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckppbf456lq6v"]
+
+[ext_resource type="Script" path="res://level1 button.gd" id="1_rcos2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="level1 button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 23.0
+offset_right = 190.0
+offset_bottom = 88.0
+text = "Level 1"
+script = ExtResource("1_rcos2")
+
+[connection signal="pressed" from="level1 button" to="level1 button" method="_on_pressed"]
